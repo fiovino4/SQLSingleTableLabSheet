@@ -1,10 +1,19 @@
 
 -- Single Table Lab Sheet
 
-CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20), species VARCHAR(20), sex CHAR(1), checkups SMALLINT UNSIGNED, birth DATE, death DATE);
+DROP TABLE IF EXISTS pet; 
+
+CREATE TABLE pet (
+    name VARCHAR(20), 
+    owner VARCHAR(20), 
+    species VARCHAR(20), 
+    sex CHAR(1), 
+    checkups SMALLINT UNSIGNED, 
+    birth DATE, 
+    death DATE
+    );
 
 -- Insert records (customised values)
-DELETE FROM pet; -- Clear existing records
 
 INSERT INTO pet (name,owner,species,sex,checkups,birth,death) VALUES
 ('Luna','Eddy','cat','f',3,'2002-01-14',NULL),
